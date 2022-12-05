@@ -15,6 +15,7 @@ public class Animal {
         this.weight = weight;
         this.height = height;
         this.length = length;
+
     }
 
     public String getName() {

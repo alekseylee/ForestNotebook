@@ -37,8 +37,19 @@ public class Omnivore extends Animal{
 
     public void addPlantToDiet(Plant plant) {
         plantDiet.add(plant);
+
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Omnivore{" +
+                super.toString() +
+                "plantDiet=" + plantDiet +
+                ", maxFoodSize=" + maxFoodSize +
+                ", name='" + name + '\'' +
+                ", weight=" + weight +
+                ", height=" + height +
+                ", length=" + length +
+                '}';
+    }
 }
