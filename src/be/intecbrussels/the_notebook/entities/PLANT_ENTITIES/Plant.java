@@ -14,7 +14,7 @@ public class Plant {
     }
 
     public String getName() {
-        return "name of plant is: " +name;
+        return name;
     }
 
     public double getHeight() {

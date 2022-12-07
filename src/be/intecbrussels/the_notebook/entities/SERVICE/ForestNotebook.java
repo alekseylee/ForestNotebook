@@ -108,6 +108,18 @@ public class ForestNotebook {
         System.out.println(plants);
     }
 
+    public void sortAnimalsByHeight() {
+        animals.sort(Comparator.comparing(Animal::getHeight));
+        animals.forEach(System.out::println);
+//        System.out.println(animals);
+    }
+
+    public void sortPlantsByHeight() {
+        plants.sort(Comparator.comparing(Plant::getHeight));
+        plants.forEach(System.out::println);
+//        System.out.println(plants);
+    }
+
     @Override
     public String toString() {
         return "ForestNotebook{" +

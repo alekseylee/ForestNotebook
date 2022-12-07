@@ -65,28 +65,32 @@ public class NatureApp {
         herbivore3.addPlantToDiet(weed1);
 
         //1
-//        forestNotebook.printNotebook();
-
+        forestNotebook.printNotebook();
+        System.out.println("------------------------------------");
         //2
-//        System.out.println("Total plant noted: ");
-//        System.out.println(forestNotebook.getPlantCount());
-//        System.out.println("Total animal noted: ");
-//        System.out.println(forestNotebook.getAnimalCount());
-
+        System.out.println("Total plant noted: ");
+        System.out.println(forestNotebook.getPlantCount());
+        System.out.println("Total animal noted: ");
+        System.out.println(forestNotebook.getAnimalCount());
+        System.out.println("------------------------------------");
         //3
-//        forestNotebook.sortAnimalsByName();
-//        forestNotebook.sortPlantsByName();
-
+        forestNotebook.sortAnimalsByName();
+        forestNotebook.sortPlantsByName();
+        System.out.println("------------------------------------");
         //4
-//        System.out.println("Carnivores list: ");
-//        forestNotebook.getCarnivores();
-//        System.out.println("Omnivores list: ");
-//        forestNotebook.getOmnivores();
-//        System.out.println("Herbivores list: ");
-//        forestNotebook.getHerbivores();
-
+        System.out.println("Carnivores list: ");
+        forestNotebook.getCarnivores();
+        System.out.println("Omnivores list: ");
+        forestNotebook.getOmnivores();
+        System.out.println("Herbivores list: ");
+        forestNotebook.getHerbivores();
+        System.out.println("------------------------------------");
         //5
-//        forestNotebook.printNotebook();
+        forestNotebook.printNotebook();
+        System.out.println("------------------------------------");
+        //6 extra
+        forestNotebook.sortAnimalsByHeight();
+        forestNotebook.sortPlantsByHeight();
 
 
 
