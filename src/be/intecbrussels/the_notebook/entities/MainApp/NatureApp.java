@@ -1,4 +1,4 @@
-package be.intecbrussels.the_notebook.entities;
+package be.intecbrussels.the_notebook.entities.MainApp;
 
 import be.intecbrussels.the_notebook.entities.ANIMAL_ENTITIES.Carnivore;
 import be.intecbrussels.the_notebook.entities.ANIMAL_ENTITIES.Herbivore;
