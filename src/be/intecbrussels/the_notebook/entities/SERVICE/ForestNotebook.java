@@ -100,24 +100,24 @@ public class ForestNotebook {
 
     public void sortAnimalsByName() {
         animals.sort(Comparator.comparing(Animal::getName));
+        animals.forEach(System.out::println);
         System.out.println(animals);
     }
 
     public void sortPlantsByName() {
         plants.sort(Comparator.comparing(Plant::getName));
-        System.out.println(plants);
+        plants.forEach(System.out::println);
+//        System.out.println(plants);
     }
 
     public void sortAnimalsByHeight() {
         animals.sort(Comparator.comparing(Animal::getHeight));
         animals.forEach(System.out::println);
-//        System.out.println(animals);
     }
 
     public void sortPlantsByHeight() {
         plants.sort(Comparator.comparing(Plant::getHeight));
         plants.forEach(System.out::println);
-//        System.out.println(plants);
     }
 
     @Override
