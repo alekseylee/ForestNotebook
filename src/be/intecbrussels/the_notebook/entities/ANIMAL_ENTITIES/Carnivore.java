@@ -24,7 +24,6 @@ public class Carnivore extends Animal{
     @Override
     public String toString() {
         return "Carnivore{" +
-                super.toString() +
                 "maxFoodSize=" + maxFoodSize +
                 ", name='" + name + '\'' +
                 ", weight=" + weight +

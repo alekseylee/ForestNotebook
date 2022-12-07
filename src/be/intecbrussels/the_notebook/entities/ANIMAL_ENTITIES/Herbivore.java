@@ -2,10 +2,11 @@ package be.intecbrussels.the_notebook.entities.ANIMAL_ENTITIES;
 
 import be.intecbrussels.the_notebook.entities.PLANT_ENTITIES.Plant;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class Herbivore extends Animal{
-    Set<Plant> plantDiet;
+    Set<Plant> plantDiet = new HashSet<>();
 
     public Herbivore(String name) {
         super(name);
@@ -26,7 +27,6 @@ public class Herbivore extends Animal{
 
     public void addPlantToDiet(Plant plant) {
         plantDiet.add(plant);
-        System.out.println("You add new " + plant + " to Diet");
     }
 
     public void printDiet() {
@@ -37,7 +37,6 @@ public class Herbivore extends Animal{
     @Override
     public String toString() {
         return "Herbivore{" +
-                super.toString() +
                 "plantDiet=" + plantDiet +
                 ", name='" + name + '\'' +
                 ", weight=" + weight +

@@ -26,6 +26,9 @@ public class ForestNotebook {
     }
 
     public List<Carnivore> getCarnivores() {
+        for (Carnivore carnivore : carnivores) {
+            System.out.println("\t" +carnivore);
+        }
         return carnivores;
     }
 
@@ -34,7 +37,10 @@ public class ForestNotebook {
     }
 
     public List<Omnivore> getOmnivores() {
-        return omnivores;
+        for (Omnivore omnivore : omnivores) {
+            System.out.println("\t" +omnivore);
+        }
+       return omnivores;
     }
 
     public void setOmnivores(List<Omnivore> omnivores) {
@@ -42,6 +48,9 @@ public class ForestNotebook {
     }
 
     public List<Herbivore> getHerbivores() {
+        for (Herbivore herbivore : herbivores) {
+            System.out.println("\t" +herbivore);
+        }
         return herbivores;
     }
 
@@ -86,7 +95,7 @@ public class ForestNotebook {
         System.out.println("List of animals: ");
         animals.forEach(animal -> System.out.println(animal));
         System.out.println("List of plants: ");
-        plants.forEach(plant -> System.out.println(plants));
+        plants.forEach(plant -> System.out.println(plant));
     }
 
     public void sortAnimalsByName() {

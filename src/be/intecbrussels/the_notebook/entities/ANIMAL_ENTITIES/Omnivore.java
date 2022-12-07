@@ -2,10 +2,11 @@ package be.intecbrussels.the_notebook.entities.ANIMAL_ENTITIES;
 
 import be.intecbrussels.the_notebook.entities.PLANT_ENTITIES.Plant;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class Omnivore extends Animal{
-    private Set<Plant> plantDiet;
+    private Set<Plant> plantDiet = new HashSet<Plant>();
     private double maxFoodSize;
 
 
@@ -43,7 +44,6 @@ public class Omnivore extends Animal{
     @Override
     public String toString() {
         return "Omnivore{" +
-                super.toString() +
                 "plantDiet=" + plantDiet +
                 ", maxFoodSize=" + maxFoodSize +
                 ", name='" + name + '\'' +
