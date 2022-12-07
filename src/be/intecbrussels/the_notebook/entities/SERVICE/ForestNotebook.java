@@ -101,13 +101,11 @@ public class ForestNotebook {
     public void sortAnimalsByName() {
         animals.sort(Comparator.comparing(Animal::getName));
         animals.forEach(System.out::println);
-        System.out.println(animals);
     }
 
     public void sortPlantsByName() {
         plants.sort(Comparator.comparing(Plant::getName));
         plants.forEach(System.out::println);
-//        System.out.println(plants);
     }
 
     public void sortAnimalsByHeight() {
